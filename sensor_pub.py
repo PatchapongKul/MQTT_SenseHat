@@ -24,7 +24,7 @@ while True:
     #print(hexlify(temp_encrypted))
 
     #Publish to broker
-    publish.single("MyRoom/Temp", temp_encrypted, hostname="test.mosquitto.org")
+    publish.single("MyRoom/sensor/temp", temp_encrypted, hostname="test.mosquitto.org")
     
     #pixels = [red if i < temp else blue for i in range(64)]
     #sense.set_pixels(pixels)
